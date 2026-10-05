@@ -17,3 +17,6 @@ mongodb:
 
 server:
   port: 9094
+
+jwt:
+  secret: ${JWT_SECRET}

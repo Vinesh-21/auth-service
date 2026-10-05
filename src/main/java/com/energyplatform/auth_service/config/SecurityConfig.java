@@ -37,8 +37,8 @@ public class SecurityConfig {
                 .authorizeExchange(exchange -> exchange
 
                         .pathMatchers(
-                                "/auth/register",
-                                "/auth/login"
+                                "api/auth/register",
+                                "api/auth/login"
                         )
                         .permitAll()
 

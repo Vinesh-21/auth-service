@@ -58,7 +58,7 @@ public class AuthService {
                     );
 
                     // New users are USER
-                    user.setRole("USER");
+                    user.setRole(request.role());
 
 
                     return userRepository.save(user);
