@@ -13,7 +13,7 @@ public class AuthController {
 
     }
 
-    @PostMapping("/register")
+    @PostMapping("/login")
     public void login(){
 
     }

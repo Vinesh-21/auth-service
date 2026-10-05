@@ -26,7 +26,7 @@ public class MongoConfig {
     }
 
     @Bean
-    public ReactiveMongoTemplate metadataMongoTemplate(@Qualifier("mongoClient") MongoClient mongoClient) {
+    public ReactiveMongoTemplate reactiveMongoTemplate(@Qualifier("mongoClient") MongoClient mongoClient) {
         return new ReactiveMongoTemplate(mongoClient, properties.getDatabases().get("metadata"));
     }
 }
