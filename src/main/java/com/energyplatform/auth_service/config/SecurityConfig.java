@@ -38,7 +38,8 @@ public class SecurityConfig {
 
                         .pathMatchers(
                                 "api/auth/register",
-                                "api/auth/login"
+                                "api/auth/login",
+                                "api/auth/role/**" // Need to add Auth JWT Validation
                         )
                         .permitAll()
 
